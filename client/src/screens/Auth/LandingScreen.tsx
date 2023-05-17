@@ -1,24 +1,13 @@
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-  Button,
-  Alert,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View, Button, Alert} from 'react-native';
 import React from 'react';
 
 export default function LandingScreen({navigation}: any) {
-  const handleNavigation = () => {};
-
+  
   return (
     <SafeAreaView style={styles.container}>
       <Text style={{fontSize: 30, marginBottom: '2%'}}>Welcome</Text>
       <View style={styles.button}>
-        <Button
-          title="Get Started"
-          onPress={() => navigation.navigate('Login')}
-        />
+        <Button title="Get Started" onPress={() => navigation.navigate('Login')} />
       </View>
     </SafeAreaView>
   );
