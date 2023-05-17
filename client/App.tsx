@@ -1,10 +1,10 @@
 import React from 'react';
-import LandingScreen from './src/components/LandingScreen';
+import AppNavContainer from './src/navigations/AppNavContainer';
 
 function App() {
   return (
     <>
-      <LandingScreen/>
+      <AppNavContainer />
     </>
   );
 }

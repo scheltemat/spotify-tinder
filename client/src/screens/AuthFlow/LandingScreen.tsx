@@ -8,16 +8,16 @@ import {
 } from 'react-native';
 import React from 'react';
 
-export default function LandingScreen() {
+export default function LandingScreen({navigation}: any) {
+  const handleNavigation = () => {};
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={[styles.text, {marginBottom: '2%'}]}>Welcome</Text>
+      <Text style={{fontSize: 30, marginBottom: '2%'}}>Welcome</Text>
       <View style={styles.button}>
         <Button
           title="Get Started"
-          onPress={() =>
-            Alert.alert('You silly goose, this doesnt do anything yet!')
-          }
+          onPress={() => navigation.navigate('Login')}
         />
       </View>
     </SafeAreaView>
@@ -29,9 +29,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  text: {
-    fontSize: 30,
   },
   button: {
     borderRadius: 10,
