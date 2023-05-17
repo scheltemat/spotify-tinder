@@ -12,21 +12,21 @@ Dating app that uses a machine learning algorithm to determine compatibility
 
 1. Clone the repository & install packages
 
-iOS:
+   iOS:
 
-```bash
-$ git clone https://github.com/scheltemat/spotify-tinder.git
+   ```bash
+   $ git clone https://github.com/scheltemat/spotify-tinder.git
 
-$ cd client
+   $ cd client
 
-$ npm install
+   $ npm install
 
-$ cd ios
+   $ cd ios
 
-$ bundle install
+   $ bundle install
 
-$ pod install
-```
+   $ pod install
+   ```
 
 ## Developing
 
